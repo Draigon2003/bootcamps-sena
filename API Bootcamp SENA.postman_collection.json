@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "f8583461-e268-4c29-8e69-2e1da54a9e58",
+		"name": "API Bootcamp SENA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Traer todos los bootcamp",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/bootcamps",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"bootcamps"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "traer bootcamp por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/bootcamps/5",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"bootcamps",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crear bootcamp",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\r\n    \"name\" : \"Nicolas\",\r\n      \"description\" : \"Python for senior programers\",\r\n      \"website\" : \"Python.org/datascience\",\r\n      \"phone\" : \"(444)444-444\",\r\n      \"user_id\" : 1\r\n   }"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/bootcamps",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"bootcamps"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizar bootcamp",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Javascript for experts\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/bootcamps/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"bootcamps",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminar bootcamp",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/bootcamps/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"bootcamps",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
